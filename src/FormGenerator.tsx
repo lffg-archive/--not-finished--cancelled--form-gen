@@ -1,9 +1,13 @@
 import React from 'react'
+import Layout from './layout'
+import './sass/main.scss'
 
 export function FormGenerator() {
   return (
     <>
-      <h1>Gerador de Formulários 3.0</h1>
+      <Layout>
+        <h1>Hello, World!</h1>
+      </Layout>
     </>
   )
 }
