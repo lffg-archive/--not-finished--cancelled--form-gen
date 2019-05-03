@@ -2,24 +2,13 @@
   "name": "form-gen",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {
-    "@types/jest": "24.0.12",
-    "@types/node": "11.13.9",
-    "@types/react": "16.8.15",
-    "@types/react-dom": "16.8.4",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-scripts": "3.0.0",
-    "typescript": "3.4.5"
-  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
+    "eject": "react-scripts eject",
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx .",
+    "lint:fix": "yarn run lint --fix ."
   },
   "browserslist": {
     "production": [
@@ -32,5 +21,32 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-scripts": "3.0.0",
+    "typescript": "3.x"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.12",
+    "@types/node": "^11.13.9",
+    "@types/react": "^16.8.15",
+    "@types/react-dom": "^16.8.4",
+    "@typescript-eslint/eslint-plugin": "1.x",
+    "@typescript-eslint/parser": "1.x",
+    "babel-eslint": "10.x",
+    "eslint": "5.x",
+    "eslint-config-lffg": "0.0.6",
+    "eslint-config-prettier": "4.x",
+    "eslint-config-react-app": "4.x",
+    "eslint-plugin-flowtype": "2.x",
+    "eslint-plugin-html": "5.x",
+    "eslint-plugin-import": "2.x",
+    "eslint-plugin-jsx-a11y": "6.x",
+    "eslint-plugin-prettier": "3.x",
+    "eslint-plugin-react": "7.x",
+    "eslint-plugin-react-hooks": "1.x",
+    "prettier": "1.x"
   }
 }
